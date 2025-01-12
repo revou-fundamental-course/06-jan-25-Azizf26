@@ -18,10 +18,10 @@
 
         <!-- Navigation -->
         <nav>
-            <a href="#home-page" class="left-rounded">Home</a>
-            <a href="#our-profile">Our Profile</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#message-us" class="right-rounded">Message Us</a>
+            <a href="#home-page" class="left-rounded nav-item">Home</a>
+            <a href="#our-profile" class="nav-item">Our Profile</a>
+            <a href="#portfolio" class="nav-item">Portfolio</a>
+            <a href="#message-us" class="right-rounded nav-item">Message Us</a>
         </nav>
     </header>
 
@@ -30,7 +30,7 @@
     <!-- Main Content -->
     <main>
         <!-- Home Page -->
-        <section>
+        <section class="section-box">
             <!-- Title -->
             <header id="home-page">
                 <h1>Hi <span id="user-greeting">User</span>, Welcome to our website</h1>
@@ -43,7 +43,7 @@
         </section>
 
         <!-- Our Profile -->
-        <section>
+        <section class="section-box">
             <!-- Title -->
             <header id="our-profile">
                 <h1>Our Profile</h1>
@@ -53,20 +53,90 @@
         </section>
 
         <!-- Portfolio -->
-        <section>
+        <section class="section-box">
             <!-- Title -->
             <header id="portfolio">
                 <h1>Portfolio</h1>
+                    <div class="city-container">
+                        <div class="city-box">
+                            <div class="lingkaran"></div>
+                            <p class="kota">Jakarta</p>
+                        </div>
+                        <div class="city-box">
+                            <div class="lingkaran"></div>
+                            <p class="kota">Bogor</p>
+                        </div>
+                        <div class="city-box">
+                            <div class="lingkaran"></div>
+                            <p class="kota">Bekasi</p>
+                        </div>
+                    </div>
             </header>
 
             <div class="content"></div>
         </section>
 
         <!-- Message Us -->
-        <section>
+        <section class="section-box">
             <!-- Title -->
             <header id="message-us">
                 <h1>Message Us</h1>
+                <div class="form-box">
+                    <!-- Form Section Left -->
+                    <table class="contact-form">
+                        <tbody>
+                            <tr>
+                                <td class="input-label">Nama</td>
+                                <td>:</td>
+                                <td> 
+                                    <input class="input-name" type="text" placeholder="Isi Nama"> </input> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="input-label">Tanggal Lahir</td>
+                                <td>:</td>
+                                <td>
+                                    <input class="input-date" type="date"/>
+                                </td> 
+                            </tr>
+                            <tr>
+                                <td class="input-label">Jenis Kelamin</td>
+                                <td>:</td>
+                                <td class="pilih-kelamin">
+                                    <div>
+                                        <input type="radio" id="male" name="gender"></input>
+                                        <label for="male">Laki-Laki</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="female" name="gender"></input>
+                                        <label for="female">Perempuan</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="input-label box-label">Pesan</td>
+                                <td class="box-label">:</td>
+                                <td>
+                                    <textarea class="input-pesan" name="message" placeholder="Masukan Pesan"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <button class="button-submit">Submit</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- Data Box Right -->
+                     <div class="contact-data">
+                        <p>Current Time : Fri Jun 17 2024</p>
+                        <p>Nama</p>
+                        <p>Tanggal Lahir</p>
+                        <p>Jenis Kelamin</p>
+                        <p>Pesan</p>
+                     </div>
+                </div>
+                    
             </header>
 
             <div class="content"></div>

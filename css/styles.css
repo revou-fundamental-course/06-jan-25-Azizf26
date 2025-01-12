@@ -4,6 +4,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .logo-icon {
@@ -16,14 +18,20 @@
 
 nav {
     display: flex;
+    
+}
+
+.nav-item {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .left-rounded {
-    border-radius: 12px 0 0 12px;
+    border-radius: 4px 0 0 4px;
 }
 
 .right-rounded {
-    border-radius: 0 12px 12px 0;
+    border-radius: 0 4px 4px 0;
 }
 
 nav>a {
@@ -43,6 +51,79 @@ nav>a {
 .content {
     /* Opsinal */
     height: 500px;
+}
+
+.city-container {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 100px;
+    gap: 40px;
+}
+
+.city-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lingkaran {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.kota {
+    text-align: center;
+
+}
+
+.section-box {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.form-box {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    gap: 80px;
+}
+
+.pilih-kelamin {
+    display: flex;
+}
+
+.input-name, .input-date, .input-pesan, .button-submit {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.input-pesan {
+    height: 100px;
+}
+
+.input-label {
+    width: 1%;
+    white-space: nowrap;
+}
+
+.box-label {
+    vertical-align: top;
+}
+
+.contact-form {
+    width: 50%;
+    
+}
+
+.contact-data {
+    width: 50%;
+    border: 1px solid black;
+    padding: 20px;
 }
 
 footer {
