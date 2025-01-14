@@ -8,37 +8,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js"></script>
-
-
-    <script language = "JavaScript">
-    
-        function getValue (form) {
-            var dataNama = document.forms[0].nama.value;
-            var dataTanggal = document.forms[0].tanggal.value
-            var dataKelamin = document.forms[0].kelamin.value
-            var dataPesan = document.forms[0].pesan.value
-
-            const boxNama = document.getElementById("dataNama");
-            const boxTanggal = document.getElementById("dataTanggal");
-            const boxKelamin = document.getElementById("dataKelamin");
-            const boxPesan = document.getElementById("dataPesan")
-
-
-            boxNama.innerHTML = dataNama
-            boxTanggal.innerHTML = dataTanggal
-
-            if (dataKelamin === "laki") {
-                boxKelamin.innerHTML = "Laki-laki"
-            } else {
-                boxKelamin.innerHTML = "Perempuan tulen"
-            }
-
-            boxPesan.innerHTML = dataPesan
-    }
-    
-    </script>
-    </head>
+</head>
 
 <body>
     <!-- Logo & Navigation -->
@@ -185,14 +155,6 @@
     </footer>
 </body>
 
+<script src="js/script.js"></script>
+
 </html>
-
-<!-- <script>
-    function validationForm(e) {
-    e.preventDefault();
-
-    var formData = new FormData(form);
-    // output as an object
-    console.log(Object.fromEntries(formData));
-}
-</script> -->
