@@ -4,6 +4,10 @@
     background-color: aqua;
 } */
 
+body {
+    background-image: url(/06-jan-25-Azizf26/assets/images/background1.jpg);
+}
+
 .main-header {
     border-bottom: 1px solid gray;
     display: flex;
@@ -25,7 +29,7 @@
 .logo-icon {
     height: 30px;
     width: 143.3px;
-    background-image: url("/06-jan-25-Azizf26/assets/images/logo.jpg");
+    background-image: url("/06-jan-25-Azizf26/assets/images/logo.png");
     background-size: cover;
 }
 
@@ -56,7 +60,7 @@ nav {
 
 nav>a {
     &:hover {
-        background-color: #fc03c2;
+        background-color: skyblue;
         font-weight: bold;
     }
     padding: 8px;
@@ -92,6 +96,9 @@ nav>a {
     }
     .profile-paragraf {
         width: 100%;
+    }
+    .profile-logo>img {
+        width: 200px;
     }
 }
 
