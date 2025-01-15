@@ -5,7 +5,8 @@ function replaceName () {
     boxNamaUser.innerHTML = name  
 }
 
-// replaceName();
+replaceName();
+
 // Run change user name
 document.getElementById('tombol-ganti').addEventListener("click", function(){ 
     replaceName();
@@ -28,18 +29,28 @@ function getValue () {
     var boxTanggalSekarang = document.getElementById("dataTanggalSekarang")
 
 
-    
-    boxNama.innerHTML = dataNama
-    boxTanggal.innerHTML = dataTanggal
-
-    if (dataKelamin === "perempuan") {
-        boxKelamin.innerHTML = "Perempuan tulen"
-    } else if (dataKelamin === "laki") {
-        boxKelamin.innerHTML = "Laki-laki"
-    } else {
-        boxKelamin.innerHTML = ""
+    if (dataNama === "") {
+        alert('Please fill out the name')
+    }  else if (dataTanggal === "") {
+        alert('Please fill out the date')
+    }   else if (dataKelamin === "") {
+        alert('Please fill out the gender')
+    }   else if (dataPesan === "") {
+        alert('Please fill out the message')
+    }   else {
+        boxNama.innerHTML = dataNama    
+        boxTanggal.innerHTML = dataTanggal    
+        
+        if (dataKelamin === "perempuan") {
+            boxKelamin.innerHTML = "Perempuan tulen"
+        } else if (dataKelamin === "laki") {
+            boxKelamin.innerHTML = "Laki-laki"
+        } else {
+            boxKelamin.innerHTML = ""
+        }
+     
+        boxPesan.innerHTML = dataPesan
+        boxTanggalSekarang.innerHTML = dataTanggalSekarang
     }
- 
-    boxPesan.innerHTML = dataPesan
-    boxTanggalSekarang.innerHTML = dataTanggalSekarang
+   
 }
