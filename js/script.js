@@ -5,7 +5,7 @@ function replaceName () {
     boxNamaUser.innerHTML = name  
 }
 
-replaceName();
+// replaceName();
 // Run change user name
 document.getElementById('tombol-ganti').addEventListener("click", function(){ 
     replaceName();
