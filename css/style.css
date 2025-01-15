@@ -25,7 +25,7 @@
 .logo-icon {
     height: 30px;
     width: 143.3px;
-    background-image: url("/06-jan-25-Azizf26/assets/images/logo.jpg");
+    background-image: url("/assets/images/logo.jpg");
     background-size: cover;
 }
 
@@ -67,13 +67,6 @@ nav>a {
 
 .home-paragraf {
     text-align: justify;
-}
-
-.banner-image {
-    height: 450px;
-    background-image: url(https://picsum.photos/1000);
-    background-size: cover;
-    background-position: center;
 }
 
 .profile {
